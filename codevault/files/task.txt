@@ -1,0 +1,21 @@
+php
+
+email formázása
+admin oldal fejlesztese
+hiba oldal?
+csillagos értékelés az admin oldalrol
+
+
+html/css
+
+chats.php css e
+chat.php css e
+confirm.php css e
+admin.php css
+notifications css(kulon seen/unseen annyi kulonbseg eleg hogy szurke/feher )
+front_page.php
+report.php
+
+
+
+

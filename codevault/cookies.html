@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Elfogadás</title>
+	
+	
+    <style>
+        #cookie-banner {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #222;
+            color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+			  font-family: Verdana, sans-serif;
+        }
+        #cookie-banner button {
+            background: blue;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        #cookie-banner button:hover {
+            background: #45a049;
+        }
+     
+    </style>
+</head>
+<body>
+    <div id="cookie-banner">
+        <span>Ez a webhely sütiket használ a jobb böngészési élmény garantálása érdekében. Az oldal használatával beleegyezik a sütik használatába. </span>
+        <button onclick="acceptCookies()">Elfogadom</button>
+       
+    </div>
+    
+    <script>
+        function acceptCookies() {
+            document.getElementById('cookie-banner').style.display = 'none';
+            localStorage.setItem('cookiesAccepted', 'true');
+        }
+
+        window.onload = function() {
+            if (localStorage.getItem('cookiesAccepted')) {
+                document.getElementById('cookie-banner').style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

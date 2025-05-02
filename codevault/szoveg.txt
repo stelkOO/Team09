@@ -1,0 +1,53 @@
+<?php
+require "config.php";
+require "templates.php";
+require "functions.php";
+is_login();
+$user_id = $_GET['id'];
+$user = get_data("select * from users where id=$user_id");
+if(isset($_POST['send_btn'])){
+	submit_review($user_id);
+}
+
+//oldal betöltése 
+	nav();
+	echo "<div class = 'user_box'>";
+	echo"<h1>".$user['username']."</h1>";
+	echo "Átlagos felhasználói értékelés: ".user_rating($user_id)."/5";
+	echo "</div>";
+	
+	// Vélemény írása form
+	
+	echo"
+	<form action='user_profile.php?id={$user_id}' method='post'>
+	<select name='point' required>
+		<option value='1'>1 pont</option>
+		<option value='2'>2 pont</option>
+		<option value='3'>3 pont</option>
+		<option value='4'>4 pont</option>
+		<option value='5'>5 pont</option>
+	</select>
+	<input type='text' name='description' placeholder='Vélemény indoklása'>
+	<input type='submit' name='send_btn' value='Beküldés'>
+	
+	</form>
+	";
+
+	//vélemények betöltése
+	load_reviews("select * from ratings where to_id=$user_id");
+	echo"<hr><br>";
+	echo"<h1>Feltöltések:</h1>";
+	
+	
+	
+	
+	
+	
+	load_requests("select * from request where userid=$user_id");
+	
+
+
+?>
+	
+	
+	<link rel="stylesheet" href="styles.css">

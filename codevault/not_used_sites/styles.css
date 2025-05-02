@@ -1,0 +1,206 @@
+.header {
+    background-color: #007BFF; 
+    padding: 10px 0; 
+  
+}
+
+
+
+.cards{
+	border: 1px solid black;
+	border-radius: 4px;
+	padding:10px;
+	max-width: 500px;
+	margin: 10px auto;
+	text-align:center;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(4, 4, 5);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+}
+.container{
+	
+}
+/* A stílusok általános formázása */
+body {
+    background: url('https://media.giphy.com/media/QpVUMRUJGokfqXyfa1/giphy.gif') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.text-center a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.text-center a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+
+
+/* Navigációs sáv stílusok */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px 20px;
+}
+
+/* Navigációs linkek */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #00bcd4;
+}
+
+
+
+
+/* Általános stílusok */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+
+
+/* Keresőmező */
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+.search-box {
+    padding: 8px 12px;
+    border: 2px solid #00bcd4;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 200px;
+    transition: all 0.3s ease-in-out;
+}
+
+.search-box:focus {
+    width: 250px;
+    border-color: #007a99;
+    outline: none;
+}
+
+/* Dobozok*/
+
+/* Keresési találatok konténer */
+.talalatok {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+/* Dobozok */
+.doboz {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.doboz:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Kód elem doboz */
+.code {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.code h2 {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Leírás */
+.leiras {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+/*file.php*/
+
+.code_file {
+    width: 40% ;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: gray;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.code_file h1 a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.code_file h1 a:hover {
+    color: #0056b3;
+}
+
+.code_file p {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}

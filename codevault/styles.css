@@ -1,0 +1,1398 @@
+
+.header {
+    background-color: #007BFF; 
+    padding: 10px 0; 
+  
+}
+
+
+
+.cards{
+	border: 1px solid black;
+	border-radius: 4px;
+	padding:10px;
+	max-width: 500px;
+	margin: 10px auto;
+	text-align:center;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(4, 4, 5);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+body {
+    background-color: #5a5454;
+    background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+    font-family: 'Roboto', sans-serif;
+    padding-top: 70px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/*Menüsor */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    background-color: #333 !important;
+    border-radius: 15px;
+}
+
+nav a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #80bfff;
+}
+
+.navbar-nav .logout-link {
+    color: red;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .logout-link:hover {
+    color: #ff6666;
+}
+
+/*Kereső mező*/
+
+.search-box {
+    padding: 8px 12px;
+    border: 2px solid #00bcd4;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 200px;
+    transition: all 0.3s ease-in-out;
+}
+
+.search-box:focus {
+    width: 250px;
+    border-color: #007a99;
+    outline: none;
+}
+
+
+.talalatok {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+/*LOGIN*/
+
+.login-wrapper {
+    max-width: 420px;
+    margin: auto;
+    padding: 20px;
+}
+
+.login-page {
+    background: linear-gradient(135deg, #1e3c72 0%, #8033be 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+.login-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+}  
+
+.login-page .form-control {
+    background-color: #3a3f44;
+    color: white;
+    border: none;
+}
+
+.login-page .form-control:focus {
+    box-shadow: 0 0 5px #64b5f6;
+    outline: none;
+}
+
+.login-page .btn-primary {
+    background-color: #1976d2;
+    border: none;
+}
+
+.login-page .btn-primary:hover {
+    background-color: #64b5f6;
+}
+
+.login-page a {
+    color: #64b5f6;
+}
+
+.login-page a:hover {
+    text-decoration: underline;
+}
+
+.login-page .login-input {
+    background-color: #3a3f44;
+    color: white;
+    border: none;
+}
+
+.login-page .login-input:focus {
+    background-color: #3a3f44 !important;
+    color: white;
+    outline: none;
+    box-shadow: 0 0 5px #232d35;
+}
+
+.login-page .btn-primary {
+    background-color: #1976d2;
+    border: none;
+}
+
+.login-page .btn-primary:hover {
+    background-color: #363c41;
+}
+*/
+/* Elfelejtett jelszó */
+.forgot-password {
+    margin-top: 10px;
+}
+
+.forgot-password a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.reg-footer {
+    margin-top: 10px;
+}
+
+.reg-footer a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.reg-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Dobozok */
+.requests-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.doboz {
+    background: #3a567b;
+    color: #FFFFFF;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.doboz:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.doboz h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.doboz p {
+    font-size: 14px;
+    color: #B9BBBE;
+    margin-bottom: 10px;
+}
+
+/* Kód elem doboz */
+.doboz .code {
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
+
+.code h2 {
+    font-size: 18px;
+    color: #FFFFFF(0, 0%, 100%);
+}
+
+/* Leírás */
+.doboz .leiras {
+    font-size: 14px;
+    color: rgb(102, 102, 102);
+    margin-top: 5px;
+}
+
+/* Kérés feltöltés upload_request.php*/
+
+.upload-container {
+    background-color: #5865F2;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.form-control, .form-select {
+    background-color: #5865F2;
+    color: white;
+    border: none;
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: #5865F2;
+    color: white;
+    outline: none;
+    box-shadow: 0 0 5px #64b5f6;
+}
+
+.btn-primary {
+    background-color: #1976d2;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #64b5f6;
+}
+
+h2{
+    color: #ffffff;
+}
+
+.upload-container input::placeholder,
+.upload-container select::placeholder {
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.upload-container input,
+.upload-container select {
+    background-color: #5865F2;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #5865F2;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+
+.upload-container button {
+    width: 100%;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.upload-container button:hover {
+    background-color: #0056b3;
+}
+
+/*file.php*/
+
+.code_file {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #213855;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: white;
+}
+
+.file_box {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: transparent !important;
+    border-radius: 8px;
+}
+
+input[type="file"] {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    border: none;
+    background-color: #3a3f44;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="file"]:hover {
+    background-color: #4a4f55;
+}
+
+.upload-btn {
+    background-color: #1976d2;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.upload-btn:hover {
+    background-color: #64b5f6;
+}
+
+/* Kosár tartalom */
+.cart-container {
+    display: flex;
+    flex-wrap: wrap;  
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.cart-item {
+    background: #2C2F33;
+    color: #FFFFFF;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.cart-item h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #DCDDDE;
+}
+
+.cart-item p {
+    font-size: 14px;
+    color: #B9BBBE;
+    margin-bottom: 15px;
+}
+
+.download-btn {
+    background-color: #5865F2;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #4752C4;
+}
+.nav-link .badge{
+	 position: relative;
+    top: 0;
+    right: 9px;
+    transform: translate(50%, -50%);
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3px 6px;
+    border-radius: 50%;
+    min-width: 18px;
+    height: 18px;
+    text-align: center;
+    line-height: 14px;
+	
+}
+  #cookie-banner {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #222;
+            color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+			  font-family: Verdana, sans-serif;
+			  z-index:1000;
+        }
+        #cookie-banner button {
+            background: blue;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        #cookie-banner button:hover {
+            background: #45a049;
+        }
+		
+		
+
+/* admin_index.php oldalhoz */
+
+.admin-page-container {
+    padding-top: 100px;
+    min-height: 100vh;
+}
+
+.admin-page-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #64b5f6;
+    margin-bottom: 30px;
+}
+
+.admin-card {
+    background-color: rgba(139, 169, 190, 0.95);
+    border-radius: 20px;
+    border: 1px solid #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.admin-card .admin-text {
+    font-size: 1.2rem;
+    color: #fff7f7;
+}
+
+.admin-file-item {
+    background-color: #f0f0f0;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+/*Admin_delete.php*/
+
+.delete-box {
+    background-color: #1f1f1f;
+    border-left: 5px solid #dc3545;
+    box-shadow: 0 0 10px rgba(220, 53, 69, 0.4);
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .delete-box button {
+    min-width: 120px;
+  }
+  
+  .delete-box .btn-danger {
+    background-color: #dc3545;
+    border: none;
+  }
+  
+  .delete-box .btn-danger:hover {
+    background-color: #c82333;
+  }
+  
+  .delete-box .btn-secondary {
+    background-color: #6c757d;
+    border: none;
+  }
+  
+  .delete-box .btn-secondary:hover {
+    background-color: #5a6268;
+  }
+  
+
+/* front_page.php stílusok */
+.frontpage-container {
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.frontpage-title {
+    text-align: center;
+    font-size: 3rem;
+    color: #64b5f6;
+    margin-bottom: 20px;
+}
+
+.frontpage-subtitle {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #eceef1;
+    margin-bottom: 40px;
+}
+
+.frontpage-card {
+    background-color: rgba(115, 234, 212, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.frontpage-card:hover {
+    transform: translateY(-5px);
+}
+
+.frontpage-button {
+    background-color: #4de0be;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+    border: none;
+}
+
+.frontpage-button:hover {
+    background-color: #3cc9a9;
+    transform: scale(1.05);
+}
+
+/* Confirm.php */
+
+.confirm-container {
+    height: 100vh;
+}
+
+.confirm-card {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(140, 238, 158, 0.95);
+    border-radius: 20px;
+    border: 1px solid rgba(140, 238, 158, 0.95);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.confirm-title {
+    color: #0e1216;
+}
+
+.confirm-text {
+    color: #333;
+}
+
+.confirm-button {
+    border-radius: 10px;
+}
+
+/*chats.php*/
+
+.chats-sidebar h5 {
+    color: white;
+}
+
+.chats-sidebar{
+    background-color: #2c2f33;
+    height: 100vh;
+    padding: 20px;
+    border-right: 1px solid #444;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.chats-list a {
+    background-color: #1e1e1e;
+    color: white;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    padding: 12px 15px;
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.chats-list a:hover {
+    background-color: #5865F2;
+    color: white;
+}
+
+
+.chats-content {
+    background-color: #6f6f6f;
+    background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.chats-content h5 {
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+/*Új rész, chat.php részen van*/
+
+.chat-body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden; 
+  }
+
+.chat-wrapper .message-container::-webkit-scrollbar {
+    display: none; 
+  }
+  
+.chat-wrapper .message-container {
+    -ms-overflow-style: none; 
+    scrollbar-width: none;     
+  }
+  
+.chat-wrapper {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    background: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+  
+  
+  .chat-wrapper .chat-area {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .chat-wrapper .message-container {
+    flex-grow: 1;
+    min-height: 0;            
+    overflow-y: auto;
+    padding: 1rem;
+    padding-bottom: 90px;   
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    
+    will-change: scroll-position;
+    contain: layout paint;
+  }
+  
+  .chat-wrapper form[name="send-message"] {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: #1f1f1f;
+    gap: 10px;
+    border-top: 1px solid #444;
+    height: 80px;
+  }
+  
+  .chat-wrapper form[name="send-message"] input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+  }
+  
+  .chat-wrapper form[name="send-message"] input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .chat-wrapper .my-msg {
+    align-self: flex-end;
+    background-color: #736cf9;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 60%;
+  }
+  
+  .chat-wrapper .to-msg {
+    align-self: flex-start;
+    background-color: #f1f1f1;
+    color: #333;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 60%;
+  }
+  
+  .chat-wrapper .timestamp {
+    font-size: 0.75rem;
+    color: #bbb;
+    margin-top: 3px;
+    display: block;
+    text-align: right;
+  }
+  
+
+.timestamp {
+    font-size: 0.75rem;
+    color: #bbb;
+    margin-top: 3px;
+    display: block;
+    text-align: right;
+  }
+  
+.message-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.my-msg, .to-msg {
+    padding: 12px 20px;
+    max-width: 70%;
+    word-wrap: break-word;
+    border-radius: 15px;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.my-msg {
+    align-self: flex-end;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.to-msg {
+    align-self: flex-start;
+    background-color: #f1f1f1;
+    color: #333;
+}
+form[name="send-message"] {
+	
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: gray;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form[name="send-message"] input[type="text"] {
+    width: 85%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: width 0.3s ease;
+}
+
+form[name="send-message"] input[type="submit"] {
+	margin-right:15px;
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+form[name="send-message"] input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*contacts.php*/
+
+.contacts-card {
+    background-color: #2c2f33;
+    color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.contacts-title {
+    color: #64b5f6;
+    margin-bottom: 1rem;
+}
+
+.contacts-details a {
+    color: #64b5f6;
+    text-decoration: underline;
+}
+
+.contacts-details a:hover {
+    color: white;
+}
+
+
+
+/*report.php*/
+
+#report-form {
+    background-color: #2c2f33;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    color: white;
+}
+  
+  #report-form select,
+  #report-form textarea {
+    background-color: #6166a4;
+    color: #fff;
+    border: none;
+    margin-bottom: 1rem;
+  }
+  
+  #report-form button {
+    background-color: #5865F2;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+  
+  #report-form button:hover {
+    background-color: #0031e0;
+  }
+
+
+
+#notification-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 3rem;
+  }
+  
+
+  .notification_unseen,
+  .notification_seen {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .notification_unseen {
+    background-color: #2c2f33;
+    color: white;
+    border-left: 4px solid #ffc107;
+}
+  
+  .notification_unseen:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px rgba(255, 193, 7, 0.4);
+  }
+  
+
+  .notification_seen {
+    background-color: #2c2f33;
+    color: white;
+    border-left: 4px solid #64b5f6;
+}
+  
+  .notification_seen:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 0 10px rgba(108, 117, 125, 0.4);
+  }
+  
+
+  .notification_unseen a,
+  .notification_seen a {
+    background-color: #074dff;
+    color: #000;
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .notification_unseen a:hover,
+  .notification_seen a:hover {
+    background-color: #007fe0;
+    color: #000;
+  }
+  
+
+  #notification-container br {
+    display: none;
+  }
+  
+  
+  
+
+/*FILTER*/
+
+/* Szűrő teljes doboza */
+.filter-form {
+	
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    margin: 0 auto;
+}
+
+.filter-container {
+	margin-top:10px;
+    display: flex;
+    gap: 10px;
+    background-color: #1e1e1e;
+    padding: 10px;
+    border-radius: 8px;
+	width:90%;
+	
+}
+
+.filter-select {
+    background-color: #3a3f44;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+	width:16%
+}
+ input.filter-search{
+	width:16%;
+}
+input.filter-price{
+	width:16%
+}
+
+.filter-select:focus {
+    outline: none;
+    box-shadow: 0 0 5px #64b5f6;
+}
+
+.filter-btn {
+    background-color: #0b58a6;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+	width:16%
+}
+
+.filter-btn:hover {
+    background-color: #4991cc;
+}
+@media (max-width: 1200px) {
+		 .filter-container {
+		   margin-top:30px;
+		}
+	}
+	
+@media (max-width: 1000px) {
+    .filter-container {
+        flex-direction: column;
+        align-items: stretch;
+		width:50%;
+    }
+	input.filter-search{
+		 
+			width:100%;
+	}
+	input.filter-price{
+			width:100%
+	}
+
+    .filter-select {
+        width: 100%;
+    }
+
+    .filter-btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+/* ADMIN OLDAL OLVASHATÓSÁGI JAVÍTÁS - SZÍNEK A MEGLÉVŐ DIZÁJNHOZ IGAZÍTVA */
+
+.admin-card {
+    background-color: #2c2f33 !important;
+    color: white !important;
+}
+
+/* Szövegek */
+.admin-card h2,
+.admin-card h3,
+.admin-card h4,
+.admin-card h5,
+.admin-card p,
+.admin-card li,
+.admin-card span,
+.admin-card label {
+    color: white !important;
+}
+.language_type{
+	border-radius:5px;
+	border: 1px solid gray;
+	
+}
+
+/* Linkek */
+.admin-card a {
+    color: #64b5f6;
+    text-decoration: underline;
+}
+.admin-card a:hover {
+    color: #ffffff;
+}
+
+/* Űrlapmezők */
+.admin-card input[type="text"],
+.admin-card input[type="number"],
+.admin-card select {
+    background-color: #3a3f44;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-bottom: 8px;
+}
+
+/* Gombok */
+.admin-card input[type="submit"],
+.admin-card button {
+    background-color: #5865F2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 16px;
+    margin: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.admin-card input[type="submit"]:hover,
+.admin-card button:hover {
+    background-color: #4752C4;
+}
+
+/*ADMIN_reports.php*/
+
+.reports-card {
+    background-color: #2c2f33;
+    color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Dropdown menü (Admin alatt) */
+/* Alap dropdown stílus */
+
+/* Custom admin dropdown */
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #1e1e1e;
+  border: 1px solid #3a3f44;
+  min-width: 140px;
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  z-index: 1000;
+}
+
+.nav-item:hover .dropdown {
+  display: block;
+}
+/* dropdown resz */
+
+
+.dropdown a {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: white;
+  background-color: #1e1e1e;
+  border-bottom: 1px solid #3a3f44;
+}
+
+.dropdown a:last-child {
+  border-bottom: none;
+}
+
+.dropdown a:hover {
+  background-color: #3a3f44;
+}
+
+
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+@media (max-width: 1000px) {
+  .dropdown{
+	  position:relative!important;
+  }
+
+/* Gombok és input elemek */
+.admin-card button,
+.admin-card select,
+.admin-card input[type="submit"],
+.admin-card input[type="button"] {
+    background-color: #5865F2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 16px;
+    margin: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.admin-card button:hover,
+.admin-card input[type="submit"]:hover,
+.admin-card input[type="button"]:hover {
+    background-color: #4752C4;
+}
+
+/* Szöveges mezők, select */
+.admin-card input[type="text"],
+.admin-card select {
+    background-color: #3a3f44;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin: 5px;
+}
+
+
+
+/* dropdown resz */
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+  }  
+
+.dropdown-menu {
+    background-color: #2c2f33;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+.dropdown-item {
+    color: white;
+    padding: 10px 20px;
+}
+.dropdown-item:hover {
+    background-color: #5865F2;
+    color: white;
+}
+
+
+@media (max-width: 1000px) {
+  .dropdown{
+	  position:relative!important;
+  }
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+}
+
+.card h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-details {
+    margin-top: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.contact-details p {
+    margin-bottom: 10px;
+}
+
+.contact-details a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+}
+/*user profile*/
+
+
+
+body.user_profile .user_box {
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 90%;
+    border: 2px solid black;
+    background-color: #3a567b;
+    color: white;
+	margin:10px auto;
+}
+
+
+body.user_profile .user_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+body.user_profile .user_header h1 {
+    font-size: 28px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+
+body.user_profile .user_header input[type="submit"] {
+    background-color: #0b58a6;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    height: 40px;
+}
+
+body.user_profile .user_header input[type="submit"]:hover {
+    background-color: #3a89c9;
+}
+
+/* Vélemény űrlap mezők */
+body.user_profile select{
+	margin:10px auto;
+	display:block;
+	width:50%;
+	
+}
+body.user_profile input[type="text"] {
+    background-color: #FFFFFF;
+    color: #000;
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 10px auto;
+    width: 50%;
+    display: block; /* Ez biztosítja a középre igazítást */
+	height:80px;
+}
+
+
+/* Beküldés gomb */
+body.user_profile input[name="send_btn"] {
+    
+    background-color: #0b58a6;
+	margin:10px auto;
+	display:block;
+	width:50%;
+	
+}
+
+body.user_profile input[name="send_btn"]:hover {
+    background-color: #3a89c9;
+}
+
